@@ -20,21 +20,19 @@ export default function PrivatlivspolitikPage() {
 
           <FadeIn delay={100}>
             <div className="prose prose-lg max-w-none text-warm-taupe">
-              <p className="text-sm text-warm-taupe mb-8">
-                Sidst opdateret: {new Date().toLocaleDateString("da-DK")}
-              </p>
+
 
               <h2 className="font-serif text-2xl text-deep-brown mt-8 mb-4">
                 1. Dataansvarlig
               </h2>
               <p>
-                Lise Sandberg Coaching er dataansvarlig for behandlingen af de 
+                Lise Sandberg Coaching er dataansvarlig for behandlingen af de
                 personoplysninger, som vi modtager om dig. Du kan kontakte os på:
               </p>
               <ul className="list-none pl-0 space-y-1">
                 <li>E-mail: coaching@lise-sandberg.dk</li>
                 <li>Telefon: 26 14 73 31</li>
-                <li>Adresse: 5230 Odense M</li>
+                <li>Adresse: Hunderup Ege 22, 5230 Odense</li>
               </ul>
 
               <h2 className="font-serif text-2xl text-deep-brown mt-8 mb-4">
@@ -78,8 +76,8 @@ export default function PrivatlivspolitikPage() {
                 5. Opbevaring
               </h2>
               <p>
-                Vi opbevarer dine personoplysninger, så længe det er nødvendigt 
-                for at opfylde de formål, hvortil de er indsamlet, eller så længe 
+                Vi opbevarer dine personoplysninger, så længe det er nødvendigt
+                for at opfylde de formål, hvortil de er indsamlet, eller så længe
                 det er påkrævet i henhold til lovgivningen.
               </p>
 
@@ -96,8 +94,8 @@ export default function PrivatlivspolitikPage() {
                 <li>Ret til at gøre indsigelse mod behandlingen</li>
               </ul>
               <p>
-                Du kan altid tilbagekalde et samtykke ved at kontakte os. 
-                Tilbagekaldelsen påvirker ikke lovligheden af den behandling, 
+                Du kan altid tilbagekalde et samtykke ved at kontakte os.
+                Tilbagekaldelsen påvirker ikke lovligheden af den behandling,
                 der er baseret på samtykke før tilbagekaldelsen.
               </p>
 
@@ -105,7 +103,7 @@ export default function PrivatlivspolitikPage() {
                 7. Cookies
               </h2>
               <p>
-                Vores hjemmeside bruger cookies til at forbedre din oplevelse. 
+                Vores hjemmeside bruger cookies til at forbedre din oplevelse.
                 Du kan til enhver tid slette cookies i din browsers indstillinger.
               </p>
 
@@ -113,7 +111,7 @@ export default function PrivatlivspolitikPage() {
                 8. Klage
               </h2>
               <p>
-                Hvis du er utilfreds med vores behandling af dine personoplysninger, 
+                Hvis du er utilfreds med vores behandling af dine personoplysninger,
                 kan du klage til Datatilsynet:
               </p>
               <ul className="list-none pl-0 space-y-1">

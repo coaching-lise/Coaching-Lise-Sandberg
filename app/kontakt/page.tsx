@@ -25,8 +25,8 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Adresse",
-    value: "5230 Odense M",
-    href: null,
+    value: "Hunderup Ege 22, 5230 Odense",
+    href: "https://www.google.com/maps/search/?api=1&query=Hunderup+Ege+22+5230+Odense",
   },
 ]
 
@@ -48,8 +48,8 @@ export default function KontaktPage() {
           </FadeIn>
           <FadeIn delay={200}>
             <p className="mt-6 text-warm-taupe text-lg leading-relaxed max-w-2xl mx-auto">
-              Har du spørgsmål eller ønsker du at høre mere om, hvordan coaching 
-              kan hjælpe dig? Udfyld formularen nedenfor, og jeg vender tilbage 
+              Har du spørgsmål eller ønsker du at høre mere om, hvordan coaching
+              kan hjælpe dig? Udfyld formularen nedenfor, og jeg vender tilbage
               hurtigst muligt.
             </p>
           </FadeIn>
@@ -108,7 +108,7 @@ export default function KontaktPage() {
 
                   <div className="mt-10 pt-8 border-t border-warm-taupe/20">
                     <p className="text-warm-taupe text-sm leading-relaxed">
-                      Jeg tilbyder både fysiske møder i Odense og online sessioner 
+                      Jeg tilbyder både fysiske møder i Odense og online sessioner
                       via video. Kontakt mig for at høre mere om mulighederne.
                     </p>
                   </div>

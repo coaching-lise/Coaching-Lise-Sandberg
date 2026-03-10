@@ -26,22 +26,21 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-off-white/90 backdrop-blur-md shadow-sm"
-          : "bg-off-white"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
+        ? "bg-off-white/90 backdrop-blur-md shadow-sm"
+        : "bg-off-white"
+        }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-32 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/logo.svg"
               alt="Lise Sandberg Coaching"
-              width={70}
-              height={70}
-              className="h-16 w-auto"
+              width={150}
+              height={150}
+              className="h-[120px] w-auto"
               priority
             />
           </Link>
