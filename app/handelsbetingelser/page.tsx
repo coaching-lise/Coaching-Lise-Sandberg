@@ -20,9 +20,7 @@ export default function HandelsbetingelserPage() {
 
           <FadeIn delay={100}>
             <div className="prose prose-lg max-w-none text-warm-taupe">
-              <p className="text-sm text-warm-taupe mb-8">
-                Sidst opdateret: {new Date().toLocaleDateString("da-DK")}
-              </p>
+
 
               <h2 className="font-serif text-2xl text-deep-brown mt-8 mb-4">
                 1. Generelt

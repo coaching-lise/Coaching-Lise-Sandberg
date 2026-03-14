@@ -32,7 +32,7 @@ export default function PrivatlivspolitikPage() {
               <ul className="list-none pl-0 space-y-1">
                 <li>E-mail: coaching@lise-sandberg.dk</li>
                 <li>Telefon: 26 14 73 31</li>
-                <li>Adresse: Hunderup Ege 22, 5230 Odense</li>
+
               </ul>
 
               <h2 className="font-serif text-2xl text-deep-brown mt-8 mb-4">
@@ -63,13 +63,13 @@ export default function PrivatlivspolitikPage() {
                 4. Retsgrundlag
               </h2>
               <p>
-                Vi behandler dine personoplysninger på følgende retsgrundlag:
+                Vi behandler dine personoplysninger på følgende retsgrundlag i henhold til artikel 6 i EU's Databeskyttelsesforordning (GDPR):
               </p>
-              <ul>
-                <li>Samtykke (artikel 6, stk. 1, litra a)</li>
-                <li>Opfyldelse af kontrakt (artikel 6, stk. 1, litra b)</li>
-                <li>Retlig forpligtelse (artikel 6, stk. 1, litra c)</li>
-                <li>Legitime interesser (artikel 6, stk. 1, litra f)</li>
+              <ul className="list-disc pl-6 space-y-4">
+                <li>Samtykke (artikel 6, stk. 1, litra a), når du frivilligt giver samtykke til behandlingen.</li>
+                <li>Opfyldelse af kontrakt (artikel 6, stk. 1, litra b), når behandlingen er nødvendig for at levere coachingforløb eller andre ydelser, du har købt.</li>
+                <li>Retlig forpligtelse (artikel 6, stk. 1, litra c), når vi er forpligtet til at opbevare oplysninger i henhold til gældende lovgivning, f.eks. bogføringsloven.</li>
+                <li>Legitime interesser (artikel 6, stk. 1, litra f), f.eks. for at administrere vores virksomhed, sikre vores systemer og forbedre vores ydelser.</li>
               </ul>
 
               <h2 className="font-serif text-2xl text-deep-brown mt-8 mb-4">
@@ -103,8 +103,8 @@ export default function PrivatlivspolitikPage() {
                 7. Cookies
               </h2>
               <p>
-                Vores hjemmeside bruger cookies til at forbedre din oplevelse.
-                Du kan til enhver tid slette cookies i din browsers indstillinger.
+                Vores hjemmeside bruger cookies til at forbedre din oplevelse.<br />
+                Du kan til enhver tid slette eller blokere cookies i din browsers indstillinger.
               </p>
 
               <h2 className="font-serif text-2xl text-deep-brown mt-8 mb-4">

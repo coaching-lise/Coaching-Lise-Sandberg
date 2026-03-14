@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import Link from "next/link"
-import { Heart, Compass, Shield, GraduationCap, Award, Briefcase } from "lucide-react"
+import { GraduationCap, Award, Briefcase } from "lucide-react"
+import Image from "next/image"
 import { FadeIn } from "@/components/fade-in"
 
 export const metadata: Metadata = {
@@ -9,26 +10,6 @@ export const metadata: Metadata = {
     "Lær mig at kende. Jeg er certificeret coach med passion for at hjælpe mennesker med at finde deres vej og skabe positive forandringer.",
 }
 
-const approach = [
-  {
-    icon: Heart,
-    title: "Nærvær",
-    description:
-      "Jeg lytter med fuld opmærksomhed og møder dig der, hvor du er. Dit perspektiv og dine følelser er i centrum.",
-  },
-  {
-    icon: Compass,
-    title: "Retning",
-    description:
-      "Sammen finder vi klarhed over dine mål og skaber en vej fremad, der føles rigtig for dig.",
-  },
-  {
-    icon: Shield,
-    title: "Tryghed",
-    description:
-      "I vores samtaler skabes et fortroligt rum, hvor du trygt kan udforske tanker og følelser.",
-  },
-]
 
 const experience = [
   {
@@ -102,61 +83,13 @@ export default function OmLisePage() {
           <FadeIn delay={100}>
             <div className="mt-8 text-warm-taupe text-lg leading-relaxed space-y-6">
               <p>
-                Jeg hedder Lise Sandberg, og jeg er certificeret coach med base i 
-                Odense. Min rejse ind i coachingverdenen begyndte, da jeg selv 
-                oplevede, hvor transformerende det kan være at have en professionel 
-                samtalepartner ved sin side.
-              </p>
-              <p>
-                Med en baggrund i erhvervslivet forstår jeg de udfordringer og 
-                muligheder, der findes både i karrieren og privatlivet. Jeg 
-                kombinerer denne erfaring med en dyb interesse for personlig 
-                udvikling og menneskelig trivsel.
-              </p>
-              <p>
-                Når jeg ikke coacher, finder du mig ofte i naturen, hvor jeg 
-                henter inspiration og ro. Jeg tror på, at vi alle har potentialet 
-                til at leve et liv i balance og glæde – og det er min mission at 
-                hjælpe dig med at opdage det.
+                Her indsætter vi noget text
               </p>
             </div>
           </FadeIn>
         </div>
       </section>
 
-      {/* Min tilgang */}
-      <section className="py-24 bg-pastel-blue">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <FadeIn>
-            <div className="text-center mb-16">
-              <span className="text-sm tracking-widest uppercase text-warm-taupe">
-                Filosofi
-              </span>
-              <h2 className="mt-4 font-serif text-3xl sm:text-4xl text-deep-brown">
-                Min tilgang
-              </h2>
-            </div>
-          </FadeIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {approach.map((item, index) => (
-              <FadeIn key={item.title} delay={index * 100}>
-                <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-off-white mx-auto flex items-center justify-center mb-6">
-                    <item.icon className="w-8 h-8 text-warm-taupe" />
-                  </div>
-                  <h3 className="font-serif text-2xl text-deep-brown mb-4">
-                    {item.title}
-                  </h3>
-                  <p className="text-warm-taupe leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Uddannelse & Erfaring */}
       <section className="py-24 bg-warm-blush">
@@ -175,7 +108,7 @@ export default function OmLisePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {experience.map((item, index) => (
               <FadeIn key={item.title} delay={index * 100}>
-                <div className="bg-off-white rounded-2xl p-8 text-center">
+                <div className="bg-off-white rounded-2xl p-8 text-center h-full">
                   <div className="w-14 h-14 rounded-full bg-soft-terracotta/30 mx-auto flex items-center justify-center mb-6">
                     <item.icon className="w-7 h-7 text-warm-taupe" />
                   </div>
@@ -189,24 +122,25 @@ export default function OmLisePage() {
               </FadeIn>
             ))}
           </div>
+
+          {/* Certificate Image */}
+          <FadeIn delay={300}>
+            <div className="mt-16 flex justify-center">
+              <div className="relative w-full max-w-2xl bg-off-white p-4 rounded-2xl shadow-sm border border-soft-terracotta/10">
+                <Image
+                  src="/certifikat.png"
+                  alt="Coaching Certifikat"
+                  width={800}
+                  height={600}
+                  className="rounded-lg w-full h-auto shadow-sm"
+                />
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
-      {/* Quote */}
-      <section className="py-24 bg-off-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <FadeIn>
-            <blockquote className="font-serif text-2xl sm:text-3xl text-deep-brown leading-relaxed italic">
-              &ldquo;Jeg tror på, at alle mennesker har ressourcerne til at skabe 
-              det liv, de ønsker. Min rolle er at hjælpe dig med at finde dem og 
-              sætte dem i spil.&rdquo;
-            </blockquote>
-          </FadeIn>
-          <FadeIn delay={100}>
-            <p className="mt-8 text-warm-taupe">— Lise Sandberg</p>
-          </FadeIn>
-        </div>
-      </section>
+
 
       {/* CTA */}
       <section className="py-24 bg-pastel-blue">

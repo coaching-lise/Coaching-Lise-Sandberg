@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, Jost } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import './globals.css'
@@ -22,7 +21,6 @@ export const metadata: Metadata = {
   description: 'Professionel coaching der skaber varig forandring. Livscoaching, karrierecoaching og personlig udvikling med Lise Sandberg i Odense.',
   keywords: ['coaching', 'livscoaching', 'karrierecoaching', 'Odense', 'personlig udvikling', 'Lise Sandberg'],
   authors: [{ name: 'Lise Sandberg' }],
-  generator: 'v0.app',
   icons: {
     icon: '/logo.svg',
   },
@@ -39,7 +37,6 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
-        <Analytics />
       </body>
     </html>
   )

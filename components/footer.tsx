@@ -9,8 +9,8 @@ const navLinks = [
 ]
 
 const socialLinks = [
-  { href: "#", icon: Instagram, label: "Instagram" },
-  { href: "#", icon: Facebook, label: "Facebook" },
+  { href: "https://www.instagram.com/lilunda/?__d=1", icon: Instagram, label: "Instagram" },
+  { href: "https://www.facebook.com/lise.l.andersen.50", icon: Facebook, label: "Facebook" },
   {
     href: "https://www.linkedin.com/in/lise-lund-sandberg-7bb58419/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3ByZTUfUw3TryBdGz3CTfb%2Bg%3D%3D",
     icon: Linkedin,
@@ -82,9 +82,9 @@ export function Footer() {
 
           {/* Social Column */}
           <div className="flex justify-start md:justify-end">
-            <div className="text-left">
+            <div className="text-left md:text-center">
               <h3 className="font-serif text-xl mb-6 text-deep-brown">Følg med</h3>
-              <div className="flex gap-4 mb-8">
+              <div className="flex gap-4 mb-8 justify-start md:justify-center">
                 {socialLinks.map((social) => (
                   <a
                     key={social.label}
@@ -106,7 +106,7 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-soft-terracotta/20 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-warm-taupe/70">
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center">
             <p>&copy; {new Date().getFullYear()} Lise Sandberg Coaching</p>
-            <p>CVR: 00000000</p>
+            <p>CVR: 46316797</p>
           </div>
           <ul className="flex gap-6 sm:gap-8">
             <li>

@@ -5,27 +5,24 @@ import { FadeIn } from "./fade-in"
 const services = [
   {
     icon: Heart,
-    title: "Livscoaching",
-    description:
-      "Find balance og mening i dit liv. Sammen udforsker vi dine værdier og skaber retning mod det liv, du ønsker.",
+    title: "Forløb 1",
+    description: "Her indsætter vi noget text",
   },
   {
     icon: Briefcase,
-    title: "Karrierecoaching",
-    description:
-      "Få klarhed over dine karrieremål og styrker. Jeg hjælper dig med at navigere mod den rette vej i arbejdslivet.",
+    title: "Forløb 2",
+    description: "Her indsætter vi noget text",
   },
   {
     icon: Users,
-    title: "Forløb og pakker",
-    description:
-      "Skræddersyede coachingforløb tilpasset dine behov. Vælg mellem intensive forløb eller løbende sessioner.",
+    title: "Forløb 3",
+    description: "Her indsætter vi noget text",
   },
 ]
 
 export function ServicesTeaser() {
   return (
-    <section className="py-24 bg-pastel-blue">
+    <section className="py-24 bg-[#f6f4f3]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-16">
@@ -41,8 +38,8 @@ export function ServicesTeaser() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <FadeIn key={service.title} delay={index * 100}>
-              <div className="bg-off-white rounded-2xl p-8 h-full hover:shadow-lg transition-shadow duration-300">
-                <div className="w-14 h-14 rounded-full bg-warm-blush flex items-center justify-center mb-6">
+              <div className="bg-off-white rounded-2xl p-8 h-full hover:shadow-lg transition-shadow duration-300 text-center">
+                <div className="w-14 h-14 rounded-full bg-warm-blush flex items-center justify-center mb-6 mx-auto">
                   <service.icon className="w-7 h-7 text-warm-taupe" />
                 </div>
                 <h3 className="font-serif text-2xl text-deep-brown mb-4">

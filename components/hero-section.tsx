@@ -13,15 +13,16 @@ export function HeroSection() {
       <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
         <FadeIn>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-deep-brown leading-tight tracking-tight text-balance">
-            Find din retning
-            <span className="block mt-2 text-warm-taupe">– med hjertet som kompas</span>
+            Lise Sandberg
           </h1>
+          <h2 className="mt-4 font-serif text-xl sm:text-2xl md:text-3xl text-warm-taupe tracking-[0.3em] uppercase">
+            LIFE - BALANCE
+          </h2>
         </FadeIn>
 
         <FadeIn delay={200}>
           <p className="mt-8 text-lg sm:text-xl text-warm-taupe max-w-2xl mx-auto leading-relaxed">
-            Professionel coaching der skaber varig forandring. 
-            Sammen finder vi vejen til det liv, du drømmer om.
+            Her indsætter vi noget text
           </p>
         </FadeIn>
 

@@ -39,6 +39,7 @@
   --off-white: #faf8f7;
   --deep-brown: #4a3f3b;
   --footer-bg: #3a302d;
+  --soft-grey: #e9ecef;
 }
 
 .dark {
@@ -89,6 +90,7 @@
   --color-off-white: var(--off-white);
   --color-deep-brown: var(--deep-brown);
   --color-footer-bg: var(--footer-bg);
+  --color-soft-grey: var(--soft-grey);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
