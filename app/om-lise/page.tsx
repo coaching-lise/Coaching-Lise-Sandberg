@@ -39,13 +39,13 @@ export default function OmLisePage() {
             {/* Image placeholder */}
             <FadeIn>
               <div className="relative aspect-[3/4] max-w-md mx-auto lg:mx-0 rounded-3xl bg-gradient-to-br from-soft-terracotta/50 to-off-white overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 rounded-full bg-off-white/60 flex items-center justify-center">
-                    <span className="text-warm-taupe text-sm tracking-widest uppercase">
-                      Foto
-                    </span>
-                  </div>
-                </div>
+                <Image 
+                  src="/Lise-billede.jpg" 
+                  alt="Lise Sandberg Foto" 
+                  fill 
+                  className="object-cover" 
+                  priority 
+                />
               </div>
             </FadeIn>
 

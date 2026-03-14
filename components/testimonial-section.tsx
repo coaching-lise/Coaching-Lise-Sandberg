@@ -3,10 +3,10 @@ import { Quote } from "lucide-react"
 
 export function TestimonialSection() {
   return (
-    <section className="py-24 bg-pastel-blue">
+    <section className="py-24 bg-[#c2b2a7]">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
         <FadeIn>
-          <Quote className="w-12 h-12 text-soft-terracotta mx-auto mb-8" />
+          <Quote className="w-12 h-12 text-off-white/80 mx-auto mb-8" />
         </FadeIn>
 
         <FadeIn delay={100}>
@@ -39,7 +39,7 @@ export function TestimonialSection() {
 
         <FadeIn delay={200}>
           <div className="mt-10">
-            <p className="text-warm-taupe uppercase tracking-widest text-sm font-semibold">
+            <p className="text-deep-brown uppercase tracking-widest text-sm font-semibold">
               — Niklas
             </p>
           </div>
