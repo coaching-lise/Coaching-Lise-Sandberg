@@ -30,16 +30,36 @@
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.625rem;
-  
+
   /* Custom colors for the coaching site */
   --warm-blush: #ede8e8;
   --soft-terracotta: #e8d5c8;
   --warm-taupe: #908581;
   --pastel-blue: #e6f0ff;
-  --off-white: #faf8f7;
+  --off-white: #fafafa;
   --deep-brown: #4a3f3b;
   --footer-bg: #3a302d;
   --soft-grey: #e9ecef;
+}
+
+/* Scoped overrides for the Frontpage */
+:root:has(.front-page) {
+  --background: #ede8e8;
+  --card: #ede8e8;
+  --popover: #ede8e8;
+  --secondary: #ede8e8;
+  --input: #ede8e8;
+
+  /* Replace light grey and blue with header/footer color #ede8e8 for elements */
+  --off-white: #ede8e8;
+  --warm-blush: #ede8e8;
+  --soft-grey: #ede8e8;
+  --accent: #ede8e8;
+  --pastel-blue: #ede8e8;
+
+  & .services-section {
+    background-color: #ede8e8;
+  }
 }
 
 .dark {
@@ -81,7 +101,7 @@
   --font-sans: var(--font-jost, 'Jost'), sans-serif;
   --font-serif: var(--font-cormorant-garamond, 'Cormorant Garamond'), serif;
   --font-mono: 'Geist Mono', 'Geist Mono Fallback';
-  
+
   /* Custom color tokens */
   --color-warm-blush: var(--warm-blush);
   --color-soft-terracotta: var(--soft-terracotta);
@@ -133,11 +153,17 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
-  
-  h1, h2, h3, h4, h5, h6 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-serif);
   }
 }
@@ -148,6 +174,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -159,8 +186,22 @@
 }
 
 /* Stagger animation delays */
-.animation-delay-100 { animation-delay: 100ms; }
-.animation-delay-200 { animation-delay: 200ms; }
-.animation-delay-300 { animation-delay: 300ms; }
-.animation-delay-400 { animation-delay: 400ms; }
-.animation-delay-500 { animation-delay: 500ms; }
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-500 {
+  animation-delay: 500ms;
+}

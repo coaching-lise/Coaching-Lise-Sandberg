@@ -3,7 +3,7 @@ import { FadeIn } from "./fade-in"
 
 export function CtaBanner() {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-[#c2b2a7]">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
         <FadeIn>
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-deep-brown">

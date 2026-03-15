@@ -5,16 +5,46 @@ import { useState, FormEvent } from "react"
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setError(null)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      message: formData.get("message"),
+    }
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    try {
+      const response = await fetch(
+        "https://hook.eu1.make.com/eyw29bxu3pgc576tm06aktfqyoxbi8eb",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      )
+
+      if (!response.ok) {
+        throw new Error("Der opstod en fejl ved afsendelse af besked.")
+      }
+
+      setIsSubmitted(true)
+    } catch (err) {
+      console.error("Submission error:", err)
+      setError(
+        "Der opstod en fejl. Prøv venligst igen senere eller kontakt mig direkte på mail."
+      )
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (isSubmitted) {
@@ -121,6 +151,10 @@ export function ContactForm() {
       >
         {isSubmitting ? "Sender..." : "Send besked"}
       </button>
+
+      {error && (
+        <p className="text-red-500 text-sm text-center mt-2">{error}</p>
+      )}
 
       <p className="text-xs text-warm-taupe text-center">
         Ved at sende denne formular accepterer du min{" "}

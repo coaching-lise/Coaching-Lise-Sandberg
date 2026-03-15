@@ -1,12 +1,12 @@
 import { Metadata } from "next"
 import Link from "next/link"
-import { Heart, Briefcase, Users, Sparkles } from "lucide-react"
+import { Heart, Briefcase, Users } from "lucide-react"
 import { FadeIn } from "@/components/fade-in"
 
 export const metadata: Metadata = {
   title: "Ydelser | Lise Sandberg Coaching",
   description:
-    "Udforsk mine coachingydelser: livscoaching, karrierecoaching, gruppeforløb og enkeltsamtaler. Professionel coaching i Odense.",
+    "Udforsk mine coachingydelser: livscoaching, karrierecoaching og gruppeforløb. Professionel coaching i Odense.",
 }
 
 const services = [
@@ -43,24 +43,13 @@ const services = [
       "Her indsætter vi noget text",
     ],
   },
-  {
-    icon: Sparkles,
-    title: "Enkeltsamtaler",
-    description: `Her indsætter vi noget text`,
-    features: [
-      "Her indsætter vi noget text",
-      "Her indsætter vi noget text",
-      "Her indsætter vi noget text",
-      "Her indsætter vi noget text",
-    ],
-  },
 ]
 
 export default function YdelserPage() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="py-24 bg-warm-blush">
+      <section className="py-32 bg-background">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <span className="text-sm tracking-widest uppercase text-warm-taupe">
@@ -69,7 +58,7 @@ export default function YdelserPage() {
           </FadeIn>
           <FadeIn delay={100}>
             <h1 className="mt-4 font-serif text-4xl sm:text-5xl md:text-6xl text-deep-brown">
-              Ydelser
+              Forløb
             </h1>
           </FadeIn>
           <FadeIn delay={200}>
@@ -84,7 +73,7 @@ export default function YdelserPage() {
       {services.map((service, index) => (
         <section
           key={service.title}
-          className={`py-24 ${index % 2 === 0 ? "bg-off-white" : "bg-warm-blush"}`}
+          className={`py-32 ${index % 2 === 0 ? "bg-white" : "bg-background"}`}
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div
@@ -137,7 +126,7 @@ export default function YdelserPage() {
       ))}
 
       {/* CTA */}
-      <section className="py-24 bg-[#c2b2a7]">
+      <section className="py-32 bg-[#c2b2a7]">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <h2 className="font-serif text-3xl sm:text-4xl text-deep-brown">
@@ -145,7 +134,7 @@ export default function YdelserPage() {
             </h2>
           </FadeIn>
           <FadeIn delay={100}>
-            <p className="mt-6 text-black text-lg leading-relaxed">
+            <p className="mt-6 text-deep-brown text-lg leading-relaxed">
               Kontakt mig for en uforpligtende samtale om, hvordan jeg kan hjælpe dig.
             </p>
           </FadeIn>

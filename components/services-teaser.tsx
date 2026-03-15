@@ -22,7 +22,7 @@ const services = [
 
 export function ServicesTeaser() {
   return (
-    <section className="py-24 bg-[#f6f4f3]">
+    <section className="py-32 bg-background services-section">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <div className="text-center mb-16">
@@ -38,8 +38,8 @@ export function ServicesTeaser() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <FadeIn key={service.title} delay={index * 100}>
-              <div className="bg-off-white rounded-2xl p-8 h-full hover:shadow-lg transition-shadow duration-300 text-center">
-                <div className="w-14 h-14 rounded-full bg-warm-blush flex items-center justify-center mb-6 mx-auto">
+              <div className="bg-transparent border border-warm-taupe rounded-2xl p-8 h-full hover:shadow-lg transition-shadow duration-300 text-center">
+                <div className="w-14 h-14 rounded-full bg-transparent border border-warm-taupe/20 flex items-center justify-center mb-6 mx-auto">
                   <service.icon className="w-7 h-7 text-warm-taupe" />
                 </div>
                 <h3 className="font-serif text-2xl text-deep-brown mb-4">

@@ -75,14 +75,14 @@ export default function KontaktPage() {
             {/* Contact Info Card */}
             <div className="lg:col-span-2">
               <FadeIn delay={100}>
-                <div className="bg-pastel-blue rounded-2xl p-8 sm:p-10 h-full">
+                <div className="bg-warm-blush rounded-2xl p-8 sm:p-10 h-full">
                   <h2 className="font-serif text-2xl sm:text-3xl text-deep-brown mb-8">
                     Kontaktoplysninger
                   </h2>
                   <div className="space-y-6">
                     {contactInfo.map((item) => (
                       <div key={item.label} className="flex items-start gap-4">
-                        <div className="w-12 h-12 rounded-full bg-off-white flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 rounded-full bg-off-white border border-soft-terracotta/30 flex items-center justify-center flex-shrink-0">
                           <item.icon className="w-5 h-5 text-warm-taupe" />
                         </div>
                         <div>

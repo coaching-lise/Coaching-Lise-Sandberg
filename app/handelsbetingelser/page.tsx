@@ -54,7 +54,7 @@ export default function HandelsbetingelserPage() {
               </h2>
               <ul>
                 <li>Alle priser er i danske kroner og inkluderer moms.</li>
-                <li>Betaling sker forud via faktura eller MobilePay.</li>
+                <li>Betaling sker forud via faktura.</li>
                 <li>Betalingsfristen er 8 dage fra fakturadato.</li>
                 <li>Ved forsinket betaling pålægges rykkergebyr på 100 kr.</li>
               </ul>
@@ -64,7 +64,7 @@ export default function HandelsbetingelserPage() {
               </h2>
               <p>
                 Afbestilling og ombooking skal ske skriftligt til 
-                coaching@lise-sandberg.dk. Følgende regler gælder:
+                coaching@lise-sandberg.dk eller telefonisk på 26 14 73 31. Følgende regler gælder:
               </p>
               <ul>
                 <li>
