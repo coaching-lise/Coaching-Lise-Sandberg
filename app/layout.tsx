@@ -18,10 +18,27 @@ const jost = Jost({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://lise-sandberg.dk'),
   title: 'Lise Sandberg Coaching | Professionel Coaching i Odense',
-  description: 'Professionel coaching der skaber varig forandring. Livscoaching, karrierecoaching og personlig udvikling med Lise Sandberg i Odense.',
+  description: 'Professionel coaching der skaber forandring. Livscoaching, karrierecoaching og personlig udvikling med Lise Sandberg i Odense.',
   keywords: ['coaching', 'livscoaching', 'karrierecoaching', 'Odense', 'personlig udvikling', 'Lise Sandberg'],
   authors: [{ name: 'Lise Sandberg' }],
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Lise Sandberg Coaching',
+    description: 'Professionel coaching der skaber forandring i Odense.',
+    url: 'https://lise-sandberg.dk',
+    siteName: 'Lise Sandberg Coaching',
+    locale: 'da_DK',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Lise Sandberg Coaching',
+    description: 'Professionel coaching der skaber forandring i Odense.',
+  },
   icons: {
     icon: [
       { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
@@ -37,6 +54,7 @@ export const metadata: Metadata = {
     title: 'Lise Sandberg Coaching',
   },
 }
+
 
 export default function RootLayout({
   children,
@@ -94,7 +112,7 @@ export default function RootLayout({
                 "name": "Lise Sandberg",
                 "jobTitle": "Certificeret Coach"
               },
-              "description": "Professionel coaching der skaber varig forandring. Livscoaching, karrierecoaching og personlig udvikling med Lise Sandberg i Odense.",
+              "description": "Professionel coaching der skaber forandring. Livscoaching, karrierecoaching og personlig udvikling med Lise Sandberg i Odense.",
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": [
