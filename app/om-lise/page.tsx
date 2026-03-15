@@ -73,7 +73,7 @@ export default function OmLisePage() {
       </section>
 
       {/* Om mig */}
-      <section className="py-24 bg-off-white">
+      <section className="py-32 bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <h2 className="font-serif text-3xl sm:text-4xl text-deep-brown text-center">
@@ -92,7 +92,7 @@ export default function OmLisePage() {
 
 
       {/* Uddannelse & Erfaring */}
-      <section className="py-24 bg-warm-blush">
+      <section className="py-32 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <FadeIn>
             <div className="text-center mb-16">
@@ -108,8 +108,8 @@ export default function OmLisePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {experience.map((item, index) => (
               <FadeIn key={item.title} delay={index * 100}>
-                <div className="bg-off-white rounded-2xl p-8 text-center h-full">
-                  <div className="w-14 h-14 rounded-full bg-soft-terracotta/30 mx-auto flex items-center justify-center mb-6">
+                <div className="bg-transparent border border-warm-taupe rounded-2xl p-8 text-center h-full">
+                  <div className="w-14 h-14 rounded-full bg-transparent border border-warm-taupe/20 mx-auto flex items-center justify-center mb-6">
                     <item.icon className="w-7 h-7 text-warm-taupe" />
                   </div>
                   <h3 className="font-serif text-xl text-deep-brown mb-3">
@@ -126,7 +126,7 @@ export default function OmLisePage() {
           {/* Certificate Image */}
           <FadeIn delay={300}>
             <div className="mt-16 flex justify-center">
-              <div className="relative w-full max-w-2xl bg-off-white p-4 rounded-2xl shadow-sm border border-soft-terracotta/10">
+              <div className="relative w-full max-w-2xl bg-white p-4 rounded-2xl shadow-sm border border-warm-taupe/20">
                 <Image
                   src="/certifikat.png"
                   alt="Coaching Certifikat"

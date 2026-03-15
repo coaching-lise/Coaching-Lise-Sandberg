@@ -58,7 +58,7 @@ export default function YdelserPage() {
           </FadeIn>
           <FadeIn delay={100}>
             <h1 className="mt-4 font-serif text-4xl sm:text-5xl md:text-6xl text-deep-brown">
-              Forløb
+              Ydelser
             </h1>
           </FadeIn>
           <FadeIn delay={200}>

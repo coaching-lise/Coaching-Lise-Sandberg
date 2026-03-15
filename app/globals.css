@@ -50,15 +50,15 @@
   --secondary: #ede8e8;
   --input: #ede8e8;
 
-  /* Replace light grey and blue with header/footer color #ede8e8 for elements */
-  --off-white: #ede8e8;
-  --warm-blush: #ede8e8;
-  --soft-grey: #ede8e8;
-  --accent: #ede8e8;
-  --pastel-blue: #ede8e8;
+  /* Replace light grey and blue with white for frontpage elements */
+  --off-white: #ffffff;
+  --warm-blush: #ffffff;
+  --soft-grey: #ffffff;
+  --accent: #ffffff;
+  --pastel-blue: #ffffff;
 
   & .services-section {
-    background-color: #ede8e8;
+    background-color: #ffffff;
   }
 }
 
