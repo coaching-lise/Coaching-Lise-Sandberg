@@ -86,7 +86,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Lise Sandberg Coaching",
-              "image": "https://lise-sandberg.dk/Lise-billede.jpg",
+              "image": "https://lise-sandberg.dk/lise-sandberg.png",
               "@id": "https://lise-sandberg.dk",
               "url": "https://lise-sandberg.dk",
               "telephone": "+4526147331",
