@@ -36,25 +36,17 @@ export function IntroSection() {
             <FadeIn delay={200}>
               <div className="mt-6 text-warm-taupe leading-relaxed text-lg space-y-4">
                 <p>
-                  Jeg tror på, at udvikling sker, når vi tør tage ansvar for egne 
-                  handlinger og arbejde med vores indre handlemønstre.
+                  Jeg hjælper mennesker, der mærker indre uro eller ubalance, med at skabe ro, klarhed
+                  og sammenhæng mellem deres værdier og deres handlinger.
                 </p>
                 <p>
-                  Som socialrådgiver og konsulent har jeg i flere år støttet 
-                  mennesker i forandring – særligt dem, der oplever stress, angst 
-                  eller manglende retning.
+                  Jeg arbejder med coaching og selvudvikling. Typisk møder jeg mennesker, der oplever
+                  stress, indre uro eller en følelse af, at deres liv ikke helt stemmer overens med det,
+                  der er vigtigt for dem.
                 </p>
                 <p>
-                  Jeg oplever selv, at min egen udvikling sker, når der er ro i 
-                  mit nervesystem – og den ro finder jeg ofte i naturen: i skoven, 
-                  ved vandet eller i stilheden omkring mig. Derfor har jeg en 
-                  særlig interesse for, hvordan nervesystemets balance kan være en 
-                  vej til trivsel, nærvær og forandring.
-                </p>
-                <p>
-                  Nu kombinerer jeg min erfaring med en masteruddannelse i 
-                  evidensbaseret coaching psykologi – for at hjælpe mennesker med 
-                  at skabe ro, klarhed og varige forandringer gennem indsigt og handling.
+                  I samtalerne arbejder vi med selvindsigt, værdier og de indre mønstre, der påvirker
+                  vores måde at handle og reagere på – med fokus på at skabe mere ro, klarhed og retning.
                 </p>
               </div>
             </FadeIn>

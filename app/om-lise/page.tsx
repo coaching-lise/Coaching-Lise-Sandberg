@@ -15,7 +15,7 @@ const experience = [
   {
     icon: GraduationCap,
     title: "Certificeret Coach",
-    description: "Uddannet fra anerkendt coachinguddannelse med fokus på personlig og professionel udvikling.",
+    description: "Uddannet coach med fokus på ro, klarhed og sammenhæng mellem værdier og handlinger.",
   },
   {
     icon: Award,
@@ -67,6 +67,16 @@ export default function OmLisePage() {
                   finde deres indre styrke og skabe positive forandringer i deres liv.
                 </p>
               </FadeIn>
+              <FadeIn delay={300}>
+                <div className="mt-10">
+                  <Link
+                    href="/kontakt"
+                    className="inline-flex items-center justify-center px-8 py-4 bg-warm-taupe text-off-white rounded-lg font-medium tracking-wide hover:bg-deep-brown transition-colors duration-300"
+                  >
+                    Kontakt mig
+                  </Link>
+                </div>
+              </FadeIn>
             </div>
           </div>
         </div>
@@ -82,8 +92,45 @@ export default function OmLisePage() {
           </FadeIn>
           <FadeIn delay={100}>
             <div className="mt-8 text-warm-taupe text-lg leading-relaxed space-y-6">
+              <p className="text-deep-brown/90 font-medium">
+                Jeg arbejder med mennesker, der ønsker at skabe forandring i deres liv.
+              </p>
               <p>
-                Her indsætter vi noget text
+                Ofte fordi de oplever indre uro, pres eller en følelse af, at deres liv ikke helt stemmer
+                overens med det, der er vigtigt for dem. Mange ved godt, hvad de længes efter – men
+                oplever alligevel, at deres handlinger trækker i en anden retning.
+              </p>
+              <p>
+                Jeg er optaget af det sted, hvor der opstår en afstand mellem vores værdier og den måde,
+                vi lever på. For mig begynder forandring netop her – i bevidstheden om det, der ikke
+                længere føles rigtigt.
+              </p>
+              <p>
+                I samtalerne arbejder vi med at skabe ro, overblik og en større forståelse af de indre
+                mønstre, der påvirker vores måde at tænke, føle og handle på. Ikke med fokus på hurtige
+                løsninger, men på at skabe en mere bæredygtig forandring, der giver mening i dit liv.
+              </p>
+              <p>
+                Min tilgang er funderet i evidensbaseret coachingpsykologi og i min erfaring som
+                socialrådgiver, konsulent og leder, hvor jeg gennem flere år har arbejdet med mennesker i
+                forandring – ofte i perioder præget af belastning, tvivl eller manglende retning.
+              </p>
+              <p>
+                Jeg har en særlig interesse for det terapeutiske arbejde og trækker i mine samtaler på
+                perspektiver fra blandt andet systemisk, humanistisk, eksistentiel og løsningsfokuseret
+                tilgang.
+              </p>
+              <p>
+                Jeg tror ikke på, at udvikling handler om at presse sig selv mere. Men om gradvist at øve
+                sig i at være mere tro mod det, der er vigtigt – også når det er svært.
+              </p>
+              <p>
+                Når der opstår større sammenhæng mellem værdier og handlinger, oplever mange en øget ro,
+                klarhed og retning.
+              </p>
+              <p>
+                Hvis du er nysgerrig på, hvad det kunne være for dig, er du velkommen til at tage
+                kontakt.
               </p>
             </div>
           </FadeIn>

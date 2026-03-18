@@ -33,11 +33,18 @@ export const metadata: Metadata = {
     siteName: 'Lise Sandberg Coaching',
     locale: 'da_DK',
     type: 'website',
+    images: [
+      {
+        url: '/lise-sandberg-coach.png',
+        alt: 'Lise Sandberg Coaching',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Lise Sandberg Coaching',
     description: 'Professionel coaching der skaber forandring i Odense.',
+    images: ['/lise-sandberg-coach.png'],
   },
   icons: {
     icon: [
@@ -86,7 +93,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Lise Sandberg Coaching",
-              "image": "https://lise-sandberg.dk/lise-sandberg.png",
+              "image": "https://lise-sandberg.dk/lise-sandberg-coach.png",
               "@id": "https://lise-sandberg.dk",
               "url": "https://lise-sandberg.dk",
               "telephone": "+4526147331",
