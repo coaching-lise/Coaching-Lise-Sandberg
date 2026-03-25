@@ -129,6 +129,11 @@ export default function OmLisePage() {
                 klarhed og retning.
               </p>
               <p>
+                Det kan give en oplevelse af større frihed i den måde du lever på.
+                Mere glæde, ro og overskud i hverdagen. Samt muligheden for at leve et liv, der i højere
+                grad er i overensstemmelse med det, der er vigtigt for dig.
+              </p>
+              <p>
                 Hvis du er nysgerrig på, hvad det kunne være for dig, er du velkommen til at tage
                 kontakt.
               </p>
