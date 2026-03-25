@@ -39,13 +39,13 @@ export function HeroSection() {
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/kontakt"
-              className="inline-flex items-center justify-center px-8 py-4 bg-warm-taupe text-off-white rounded-lg font-medium tracking-wide hover:bg-deep-brown transition-colors duration-300"
+              className="inline-flex items-center justify-center min-w-[200px] px-8 py-4 bg-warm-taupe text-off-white rounded-lg font-medium tracking-wide hover:bg-deep-brown transition-colors duration-300"
             >
               Book en samtale
             </Link>
             <Link
               href="/ydelser"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-warm-taupe text-warm-taupe rounded-lg font-medium tracking-wide hover:bg-warm-taupe hover:text-white transition-colors duration-300 shadow-sm"
+              className="inline-flex items-center justify-center min-w-[200px] px-8 py-4 bg-white border-2 border-warm-taupe text-warm-taupe rounded-lg font-medium tracking-wide hover:bg-warm-taupe hover:text-white transition-colors duration-300 shadow-sm"
             >
               Se ydelser
             </Link>
