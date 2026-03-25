@@ -32,7 +32,7 @@ export function Header() {
         }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-32 items-center justify-between">
+        <div className={`flex items-center justify-between transition-all duration-500 ${isScrolled ? "h-20" : "h-32"}`}>
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
@@ -40,7 +40,7 @@ export function Header() {
               alt="Lise Sandberg Coaching"
               width={150}
               height={150}
-              className="h-[120px] w-auto"
+              className={`w-auto transition-all duration-500 ${isScrolled ? "h-[80px]" : "h-[128px]"}`}
               priority
             />
           </Link>

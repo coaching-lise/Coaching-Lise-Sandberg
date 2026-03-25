@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import Image from "next/image"
 import { Phone, Mail, MapPin } from "lucide-react"
 import { FadeIn } from "@/components/fade-in"
 import { ContactForm } from "@/components/contact-form"
@@ -34,8 +35,18 @@ export default function KontaktPage() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="py-24 bg-warm-blush">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-24 bg-warm-blush overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0 opacity-20">
+          <Image
+            src="/b6.png"
+            alt="Background"
+            fill
+            className="object-cover object-[50%_35%]"
+            priority
+          />
+        </div>
+        <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <span className="text-sm tracking-widest uppercase text-warm-taupe">
               Kontakt
@@ -48,9 +59,8 @@ export default function KontaktPage() {
           </FadeIn>
           <FadeIn delay={200}>
             <p className="mt-6 text-warm-taupe text-lg leading-relaxed max-w-2xl mx-auto">
-              Har du spørgsmål eller ønsker du at høre mere om, hvordan coaching
-              kan hjælpe dig? Udfyld formularen nedenfor, og jeg vender tilbage
-              hurtigst muligt.
+              Jeg tilbyder både fysiske møder i Odense og online sessioner via
+              video. Kontakt mig for at høre mere om mulighederne.
             </p>
           </FadeIn>
         </div>
@@ -75,10 +85,19 @@ export default function KontaktPage() {
             {/* Contact Info Card */}
             <div className="lg:col-span-2">
               <FadeIn delay={100}>
-                <div className="bg-warm-blush rounded-2xl p-8 sm:p-10 h-full">
-                  <h2 className="font-serif text-2xl sm:text-3xl text-deep-brown mb-8">
-                    Kontaktoplysninger
-                  </h2>
+                <div className="bg-warm-blush rounded-2xl overflow-hidden h-full flex flex-col">
+                  <div className="relative h-[350px] sm:h-[420px] w-full mb-6 flex-shrink-0">
+                    <Image
+                      src="/lise-sandberg.png"
+                      alt="Lise Sandberg"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="px-8 pb-10 sm:px-10 flex-grow">
+                    <h2 className="font-serif text-2xl sm:text-3xl text-deep-brown mb-8">
+                      Kontaktoplysninger
+                    </h2>
                   <div className="space-y-6">
                     {contactInfo.map((item) => (
                       <div key={item.label} className="flex items-start gap-4">
@@ -106,11 +125,6 @@ export default function KontaktPage() {
                     ))}
                   </div>
 
-                  <div className="mt-10 pt-8 border-t border-warm-taupe/20">
-                    <p className="text-warm-taupe text-sm leading-relaxed">
-                      Jeg tilbyder både fysiske møder i Odense og online sessioner
-                      via video. Kontakt mig for at høre mere om mulighederne.
-                    </p>
                   </div>
                 </div>
               </FadeIn>

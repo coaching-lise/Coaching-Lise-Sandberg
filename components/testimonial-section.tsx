@@ -40,7 +40,7 @@ export function TestimonialSection() {
         <FadeIn delay={200}>
           <div className="mt-10">
             <p className="text-deep-brown uppercase tracking-widest text-sm font-semibold">
-              — Niklas
+              Niklas
             </p>
           </div>
         </FadeIn>

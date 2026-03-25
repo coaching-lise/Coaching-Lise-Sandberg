@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-off-white via-warm-blush/30 to-off-white pt-20 overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0 opacity-20 transition-opacity duration-1000">
+      <div className="absolute inset-0 z-0 opacity-35 transition-opacity duration-1000">
         <Image
           src="/b5.png"
           alt="Hero Background"
@@ -24,13 +24,13 @@ export function HeroSection() {
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
         <FadeIn>
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-warm-taupe leading-tight tracking-tight text-balance">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-warm-taupe leading-tight tracking-tight text-balance uppercase">
             Lise Sandberg
           </h1>
-          <h2 className="mt-1 font-serif text-xl sm:text-2xl md:text-3xl font-medium text-warm-taupe leading-tight tracking-tight text-balance">
+          <h2 className="mt-2 font-serif text-3xl sm:text-4xl md:text-5xl font-medium text-warm-taupe leading-tight tracking-tight text-balance uppercase">
             Coaching
           </h2>
-          <h2 className="mt-4 font-serif text-xl sm:text-2xl md:text-3xl text-warm-taupe tracking-[0.3em] uppercase">
+          <h2 className="mt-6 font-serif text-lg sm:text-xl md:text-2xl text-warm-taupe tracking-[0.3em] uppercase">
             LIFE - BALANCE
           </h2>
         </FadeIn>
@@ -45,7 +45,7 @@ export function HeroSection() {
             </Link>
             <Link
               href="/ydelser"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-warm-taupe text-warm-taupe rounded-lg font-medium tracking-wide hover:bg-warm-blush transition-colors duration-300"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-warm-taupe text-warm-taupe rounded-lg font-medium tracking-wide hover:bg-warm-taupe hover:text-white transition-colors duration-300 shadow-sm"
             >
               Se ydelser
             </Link>

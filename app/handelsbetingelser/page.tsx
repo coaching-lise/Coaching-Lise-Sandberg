@@ -72,7 +72,7 @@ export default function HandelsbetingelserPage() {
                   eller ombooking.
                 </li>
                 <li>
-                  <strong>24-48 timer før:</strong> 50% af prisen opkræves.
+                  <strong>24 til 48 timer før:</strong> 50% af prisen opkræves.
                 </li>
                 <li>
                   <strong>Mindre end 24 timer før:</strong> Fuld pris opkræves.

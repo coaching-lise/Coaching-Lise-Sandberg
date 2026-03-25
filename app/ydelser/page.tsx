@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import Image from "next/image"
 import Link from "next/link"
 import { Heart, Briefcase, Users } from "lucide-react"
 import { FadeIn } from "@/components/fade-in"
@@ -49,8 +50,18 @@ export default function YdelserPage() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="py-32 bg-background">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-32 bg-warm-blush overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0 opacity-20">
+          <Image
+            src="/b2.png"
+            alt="Background"
+            fill
+            className="object-cover object-[50%_35%]"
+            priority
+          />
+        </div>
+        <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <span className="text-sm tracking-widest uppercase text-warm-taupe">
               Mine ydelser
@@ -129,19 +140,19 @@ export default function YdelserPage() {
       <section className="py-32 bg-[#c2b2a7]">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
-            <h2 className="font-serif text-3xl sm:text-4xl text-deep-brown">
+            <h2 className="font-serif text-3xl sm:text-4xl text-white">
               Klar til at tage det første skridt?
             </h2>
           </FadeIn>
           <FadeIn delay={100}>
-            <p className="mt-6 text-deep-brown text-lg leading-relaxed">
+            <p className="mt-6 text-white text-lg leading-relaxed">
               Kontakt mig for en uforpligtende samtale om, hvordan jeg kan hjælpe dig.
             </p>
           </FadeIn>
           <FadeIn delay={200}>
             <Link
               href="/kontakt"
-              className="inline-flex items-center justify-center mt-10 px-8 py-4 bg-warm-taupe text-off-white rounded-lg font-medium tracking-wide hover:bg-deep-brown transition-colors duration-300"
+              className="inline-flex items-center justify-center mt-10 px-8 py-4 bg-warm-taupe text-white rounded-lg font-medium tracking-wide hover:bg-deep-brown transition-colors duration-300"
             >
               Kontakt mig for at høre mere
             </Link>

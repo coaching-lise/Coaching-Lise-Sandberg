@@ -44,7 +44,7 @@ export default function PrivatlivspolitikPage() {
                 <li>Oplysninger du giver os i forbindelse med coaching</li>
                 <li>Betalingsoplysninger ved køb af ydelser</li>
                 <li>
-                  Tekniske oplysninger ved brug af hjemmesiden (cookies, IP-adresse)
+                  Tekniske oplysninger ved brug af hjemmesiden (cookies, IP adresse)
                 </li>
               </ul>
 

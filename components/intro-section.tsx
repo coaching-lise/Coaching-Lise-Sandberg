@@ -46,7 +46,7 @@ export function IntroSection() {
                 </p>
                 <p>
                   I samtalerne arbejder vi med selvindsigt, værdier og de indre mønstre, der påvirker
-                  vores måde at handle og reagere på – med fokus på at skabe mere ro, klarhed og retning.
+                  vores måde at handle og reagere på, med fokus på at skabe mere ro, klarhed og retning.
                 </p>
               </div>
             </FadeIn>

@@ -19,7 +19,7 @@ const experience = [
   },
   {
     icon: Award,
-    title: "ICF-akkrediteret",
+    title: "ICF akkrediteret",
     description: "Følger de internationale standarder og etiske retningslinjer fra International Coaching Federation.",
   },
   {
@@ -97,12 +97,12 @@ export default function OmLisePage() {
               </p>
               <p>
                 Ofte fordi de oplever indre uro, pres eller en følelse af, at deres liv ikke helt stemmer
-                overens med det, der er vigtigt for dem. Mange ved godt, hvad de længes efter – men
+                overens med det, der er vigtigt for dem. Mange ved godt, hvad de længes efter, men
                 oplever alligevel, at deres handlinger trækker i en anden retning.
               </p>
               <p>
                 Jeg er optaget af det sted, hvor der opstår en afstand mellem vores værdier og den måde,
-                vi lever på. For mig begynder forandring netop her – i bevidstheden om det, der ikke
+                vi lever på. For mig begynder forandring netop her, i bevidstheden om det, der ikke
                 længere føles rigtigt.
               </p>
               <p>
@@ -113,7 +113,7 @@ export default function OmLisePage() {
               <p>
                 Min tilgang er funderet i evidensbaseret coachingpsykologi og i min erfaring som
                 socialrådgiver, konsulent og leder, hvor jeg gennem flere år har arbejdet med mennesker i
-                forandring – ofte i perioder præget af belastning, tvivl eller manglende retning.
+                forandring, ofte i perioder præget af belastning, tvivl eller manglende retning.
               </p>
               <p>
                 Jeg har en særlig interesse for det terapeutiske arbejde og trækker i mine samtaler på
@@ -122,7 +122,7 @@ export default function OmLisePage() {
               </p>
               <p>
                 Jeg tror ikke på, at udvikling handler om at presse sig selv mere. Men om gradvist at øve
-                sig i at være mere tro mod det, der er vigtigt – også når det er svært.
+                sig i at være mere tro mod det, der er vigtigt, også når det er svært.
               </p>
               <p>
                 Når der opstår større sammenhæng mellem værdier og handlinger, oplever mange en øget ro,
@@ -193,19 +193,19 @@ export default function OmLisePage() {
       <section className="py-24 bg-[#c2b2a7]">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
-            <h2 className="font-serif text-3xl sm:text-4xl text-deep-brown">
+            <h2 className="font-serif text-3xl sm:text-4xl text-white">
               Lad os mødes
             </h2>
           </FadeIn>
           <FadeIn delay={100}>
-            <p className="mt-6 text-deep-brown text-lg leading-relaxed">
+            <p className="mt-6 text-white text-lg leading-relaxed">
               Jeg glæder mig til at høre fra dig og lære dig at kende.
             </p>
           </FadeIn>
           <FadeIn delay={200}>
             <Link
               href="/kontakt"
-              className="inline-flex items-center justify-center mt-10 px-8 py-4 bg-warm-taupe text-off-white rounded-lg font-medium tracking-wide hover:bg-deep-brown transition-colors duration-300"
+              className="inline-flex items-center justify-center mt-10 px-8 py-4 bg-warm-taupe text-white rounded-lg font-medium tracking-wide hover:bg-deep-brown hover:text-white transition-colors duration-300"
             >
               Kontakt mig
             </Link>
