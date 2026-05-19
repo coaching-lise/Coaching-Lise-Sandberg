@@ -53,7 +53,7 @@ export default function HandelsbetingelserPage() {
                 4. Priser og betaling
               </h2>
               <ul>
-                <li>Alle priser er i danske kroner og inkluderer moms.</li>
+                <li>Alle priser er i danske kroner + moms.</li>
                 <li>Betaling sker forud via faktura.</li>
                 <li>Betalingsfristen er 8 dage fra fakturadato.</li>
                 <li>Ved forsinket betaling pålægges rykkergebyr på 100 kr.</li>

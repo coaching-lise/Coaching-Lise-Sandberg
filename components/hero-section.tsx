@@ -13,7 +13,7 @@ export function HeroSection() {
           src="/b5.png"
           alt="Hero Background"
           fill
-          className="object-cover"
+          className="object-cover object-[50%_80%] scale-110"
           priority
         />
       </div>
@@ -22,7 +22,7 @@ export function HeroSection() {
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-soft-terracotta/20 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-pastel-blue/30 rounded-full blur-3xl" />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center -mt-24 md:-mt-32">
         <FadeIn>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-medium text-warm-taupe leading-tight tracking-tight text-balance uppercase">
             Lise Sandberg

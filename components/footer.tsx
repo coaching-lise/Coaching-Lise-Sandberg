@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Phone, Mail, MapPin, Instagram, Facebook, Linkedin } from "lucide-react"
+import { Phone, Mail, Instagram, Facebook, Linkedin } from "lucide-react"
 
 const navLinks = [
   { href: "/", label: "Hjem" },
@@ -44,17 +44,6 @@ export function Footer() {
                     className="hover:text-deep-brown transition-colors"
                   >
                     coaching@lise-sandberg.dk
-                  </a>
-                </li>
-                <li className="flex items-center gap-3">
-                  <MapPin size={18} className="text-warm-taupe" />
-                  <a
-                    href="https://www.google.com/maps/search/?api=1&query=Hunderup+Ege+22+5230+Odense"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:text-deep-brown transition-colors"
-                  >
-                    Hunderup Ege 22, 5230 Odense
                   </a>
                 </li>
               </ul>

@@ -40,7 +40,7 @@ export default function OmLisePage() {
             <FadeIn>
               <div className="relative aspect-[3/4] max-w-md mx-auto lg:mx-0 rounded-3xl bg-gradient-to-br from-soft-terracotta/50 to-off-white overflow-hidden">
                 <Image 
-                  src="/lise-sandberg.png" 
+                  src="/lise-om-mig.webP" 
                   alt="Lise Sandberg Foto" 
                   fill 
                   className="object-cover" 

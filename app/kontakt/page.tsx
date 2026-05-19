@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import Image from "next/image"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail } from "lucide-react"
 import { FadeIn } from "@/components/fade-in"
 import { ContactForm } from "@/components/contact-form"
 
@@ -23,29 +23,13 @@ const contactInfo = [
     value: "coaching@lise-sandberg.dk",
     href: "mailto:coaching@lise-sandberg.dk",
   },
-  {
-    icon: MapPin,
-    label: "Adresse",
-    value: "Hunderup Ege 22, 5230 Odense",
-    href: "https://www.google.com/maps/search/?api=1&query=Hunderup+Ege+22+5230+Odense",
-  },
 ]
 
 export default function KontaktPage() {
   return (
     <div className="pt-20">
       {/* Hero */}
-      <section className="relative py-24 bg-warm-blush overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0 opacity-20">
-          <Image
-            src="/b6.png"
-            alt="Background"
-            fill
-            className="object-cover object-[50%_35%]"
-            priority
-          />
-        </div>
+      <section className="relative py-24 bg-background overflow-hidden">
         <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <span className="text-sm tracking-widest uppercase text-warm-taupe">
@@ -73,7 +57,7 @@ export default function KontaktPage() {
             {/* Form */}
             <div className="lg:col-span-3">
               <FadeIn>
-                <div className="bg-warm-blush rounded-2xl p-8 sm:p-10">
+                <div className="bg-warm-blush rounded-2xl p-8 sm:p-10 shadow-2xl">
                   <h2 className="font-serif text-2xl sm:text-3xl text-deep-brown mb-8">
                     Send en besked
                   </h2>
@@ -85,13 +69,13 @@ export default function KontaktPage() {
             {/* Contact Info Card */}
             <div className="lg:col-span-2">
               <FadeIn delay={100}>
-                <div className="bg-warm-blush rounded-2xl overflow-hidden h-full flex flex-col">
-                  <div className="relative h-[350px] sm:h-[420px] w-full mb-6 flex-shrink-0">
+                <div className="bg-warm-blush rounded-2xl overflow-hidden h-full flex flex-col shadow-2xl">
+                  <div className="relative h-[350px] sm:h-[420px] w-full mb-6 flex-shrink-0 overflow-hidden">
                     <Image
-                      src="/lise-sandberg.png"
+                      src="/lise-forside.webP"
                       alt="Lise Sandberg"
                       fill
-                      className="object-cover"
+                      className="object-cover object-[80%_center] scale-110 origin-[80%_center]"
                     />
                   </div>
                   <div className="px-8 pb-10 sm:px-10 flex-grow">

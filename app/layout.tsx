@@ -97,18 +97,6 @@ export default function RootLayout({
               "@id": "https://lise-sandberg.dk",
               "url": "https://lise-sandberg.dk",
               "telephone": "+4526147331",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Hunderup Ege 22",
-                "addressLocality": "Odense",
-                "postalCode": "5230",
-                "addressCountry": "DK"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 55.3857,
-                "longitude": 10.3813
-              },
               "url_social": [
                 "https://www.instagram.com/lilunda/",
                 "https://www.facebook.com/lise.l.andersen.50",

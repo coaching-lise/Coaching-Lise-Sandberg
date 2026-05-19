@@ -1,22 +1,17 @@
 import Link from "next/link"
-import { Heart, Briefcase, Users } from "lucide-react"
+import { Heart, Briefcase } from "lucide-react"
 import { FadeIn } from "./fade-in"
 
 const services = [
   {
     icon: Heart,
-    title: "Forløb 1",
-    description: "Her indsætter vi noget text",
+    title: "Personligt Coachingforløb",
+    description: "Et forløb for dig, der ønsker at skabe større ro, klarhed og sammenhæng i dit liv.",
   },
   {
     icon: Briefcase,
-    title: "Forløb 2",
-    description: "Her indsætter vi noget text",
-  },
-  {
-    icon: Users,
-    title: "Forløb 3",
-    description: "Her indsætter vi noget text",
+    title: "Erhverv",
+    description: "Skræddersyede forløb til virksomheder med fokus på trivsel, klarhed og stressforebyggelse.",
   },
 ]
 
@@ -35,10 +30,13 @@ export function ServicesTeaser() {
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {services.map((service, index) => (
             <FadeIn key={service.title} delay={index * 100}>
-              <div className="bg-transparent border border-warm-taupe rounded-2xl p-8 h-full hover:shadow-lg transition-shadow duration-300 text-center">
+              <Link 
+                href={service.title === "Erhverv" ? "/ydelser#erhverv" : "/ydelser"}
+                className="block bg-transparent border border-warm-taupe rounded-2xl p-8 h-full hover:shadow-lg transition-shadow duration-300 text-center"
+              >
                 <div className="w-14 h-14 rounded-full bg-transparent border border-warm-taupe/20 flex items-center justify-center mb-6 mx-auto">
                   <service.icon className="w-7 h-7 text-warm-taupe" />
                 </div>
@@ -48,7 +46,7 @@ export function ServicesTeaser() {
                 <p className="text-warm-taupe leading-relaxed">
                   {service.description}
                 </p>
-              </div>
+              </Link>
             </FadeIn>
           ))}
         </div>
