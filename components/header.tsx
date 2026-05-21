@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
+import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 
 const navLinks = [
@@ -13,8 +14,15 @@ const navLinks = [
 ]
 
 export function Header() {
+  const pathname = usePathname()
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const scrollToTopIfHome = () => {
+    if (pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +42,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className={`flex items-center justify-between transition-all duration-500 ${isScrolled ? "h-20" : "h-32"}`}>
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0" onClick={scrollToTopIfHome}>
             <Image
               src="/logo.svg"
               alt="Lise Sandberg Coaching"
@@ -51,6 +59,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={link.href === "/" ? scrollToTopIfHome : undefined}
                 className="relative text-warm-taupe hover:text-deep-brown transition-colors duration-200 font-medium tracking-wide group"
               >
                 {link.label}
@@ -77,7 +86,10 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => {
+                    if (link.href === "/") scrollToTopIfHome()
+                    setIsMobileMenuOpen(false)
+                  }}
                   className="text-warm-taupe hover:text-deep-brown transition-colors duration-200 font-medium tracking-wide py-2"
                 >
                   {link.label}
