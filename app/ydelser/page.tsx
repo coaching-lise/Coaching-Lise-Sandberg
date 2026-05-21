@@ -75,7 +75,7 @@ export default function YdelserPage() {
                   }`}
               >
                 {/* Media side */}
-                <div className={index % 2 !== 0 ? "lg:order-2" : ""}>
+                <div className={`space-y-8 ${index % 2 !== 0 ? "lg:order-2" : ""}`}>
                   <FadeIn>
                     {service.image ? (
                       <div className="relative aspect-[4/5] max-w-md mx-auto rounded-3xl overflow-hidden shadow-2xl">
@@ -102,6 +102,27 @@ export default function YdelserPage() {
                       </div>
                     )}
                   </FadeIn>
+
+                  {service.practical && (
+                    <FadeIn delay={100} className="hidden lg:block">
+                      <div className="max-w-md mx-auto w-full pt-4">
+                        <h3 className="font-serif text-2xl text-deep-brown mb-6">
+                          Praktisk information
+                        </h3>
+                        <ul className="space-y-1">
+                          {service.practical.map((item, i) => (
+                            <li
+                              key={`practical-desktop-${i}`}
+                              className="flex items-start gap-3 text-warm-taupe"
+                            >
+                              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-deep-brown flex-shrink-0" />
+                              <span className="leading-relaxed">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </FadeIn>
+                  )}
                 </div>
 
                 {/* Content side */}
@@ -143,29 +164,28 @@ export default function YdelserPage() {
                     </FadeIn>
                   )}
 
-                </div>
+                  {service.practical && (
+                    <FadeIn delay={100} className="lg:hidden">
+                      <div className="max-w-md mx-auto w-full pt-4">
+                        <h3 className="font-serif text-2xl text-deep-brown mb-6">
+                          Praktisk information
+                        </h3>
+                        <ul className="space-y-1">
+                          {service.practical.map((item, i) => (
+                            <li
+                              key={`practical-mobile-${i}`}
+                              className="flex items-start gap-3 text-warm-taupe"
+                            >
+                              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-deep-brown flex-shrink-0" />
+                              <span className="leading-relaxed">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </FadeIn>
+                  )}
 
-                {/* Practical info — after content on mobile, under image on desktop */}
-                {service.practical && (
-                  <FadeIn delay={100}>
-                    <div className="max-w-md mx-auto w-full pt-4">
-                      <h3 className="font-serif text-2xl text-deep-brown mb-6">
-                        Praktisk information
-                      </h3>
-                      <ul className="space-y-1">
-                        {service.practical.map((item, i) => (
-                          <li
-                            key={`practical-${i}`}
-                            className="flex items-start gap-3 text-warm-taupe"
-                          >
-                            <span className="mt-2 w-1.5 h-1.5 rounded-full bg-deep-brown flex-shrink-0" />
-                            <span className="leading-relaxed">{item}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </FadeIn>
-                )}
+                </div>
               </div>
             </div>
           </section>
