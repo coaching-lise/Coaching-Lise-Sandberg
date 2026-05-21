@@ -2,7 +2,7 @@ import { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import { Heart, Briefcase, Users } from "lucide-react"
+import { Heart, Users } from "lucide-react"
 import { FadeIn } from "@/components/fade-in"
 
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ const services = [
     ],
   },
   {
-    icon: Briefcase,
+    image: "/coaching-erhverv.webP",
     title: "Erhverv",
     description: `Jeg tilbyder også skræddersyede forløb til virksomheder, der ønsker at skabe bedre trivsel, klarhed og retning for deres medarbejdere eller ledere.\n\nMåske oplever I pres i hverdagen og har brug for et rum til refleksion og udvikling. Et coachingforløb kan skabe større overblik, forebygge stress og styrke balancen mellem arbejdsliv og privatliv.\n\nForløbet tilpasses jeres specifikke behov. Kontakt mig for en uforpligtende samtale om, hvordan vi kan skabe et forløb, der giver mening for jer.`,
   },
@@ -83,7 +83,11 @@ export default function YdelserPage() {
                           src={service.image}
                           alt={service.title}
                           fill
-                          className="object-cover"
+                          className={
+                            service.title === "Erhverv"
+                              ? "object-cover object-[85%_center]"
+                              : "object-cover"
+                          }
                           priority={index === 0}
                         />
                       </div>

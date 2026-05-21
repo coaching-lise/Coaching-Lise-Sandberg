@@ -10,10 +10,10 @@ export function IntroSection() {
           <FadeIn>
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
               <Image
-                src="/lise-forside.webP"
+                src="/lise-sandberg.webP"
                 alt="Lise Sandberg"
                 fill
-                className="object-cover object-[80%_center]"
+                className="object-cover object-[28%_center]"
                 priority
               />
             </div>
