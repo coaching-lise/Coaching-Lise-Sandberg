@@ -30,6 +30,7 @@ export function TestimonialSection() {
   const [current, setCurrent] = useState(0)
   const [containerHeight, setContainerHeight] = useState<number | undefined>(undefined)
   const slideRefs = useRef<(HTMLDivElement | null)[]>([])
+  const userInteracted = useRef(false)
 
   // Measure the tallest slide and lock the container height
   useEffect(() => {
@@ -48,26 +49,35 @@ export function TestimonialSection() {
     return () => window.removeEventListener("resize", measure)
   }, [])
 
+  const stopAutoRotate = useCallback(() => {
+    userInteracted.current = true
+  }, [])
+
   const goTo = useCallback(
     (index: number) => {
       if (index === current) return
+      stopAutoRotate()
       setCurrent(index)
     },
-    [current]
+    [current, stopAutoRotate]
   )
 
   const next = useCallback(() => {
+    stopAutoRotate()
     setCurrent((prev) => (prev + 1) % testimonials.length)
-  }, [])
+  }, [stopAutoRotate])
 
   const prev = useCallback(() => {
+    stopAutoRotate()
     setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length)
-  }, [])
+  }, [stopAutoRotate])
 
-  // Auto-rotate every 8 seconds
+  // Auto-rotate every 8 seconds, stops permanently once user interacts
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % testimonials.length)
+      if (!userInteracted.current) {
+        setCurrent((prev) => (prev + 1) % testimonials.length)
+      }
     }, 8000)
     return () => clearInterval(timer)
   }, [])
