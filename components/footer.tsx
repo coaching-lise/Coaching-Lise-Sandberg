@@ -92,11 +92,19 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-soft-terracotta/20 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-warm-taupe/70">
+        <div className="mt-12 pt-8 border-t border-soft-terracotta/20 relative flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-warm-taupe/70">
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center">
             <p>&copy; {new Date().getFullYear()} Lise Sandberg Coaching</p>
             <p>CVR: 46316797</p>
           </div>
+          <a
+            href="https://companio.dk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-deep-brown transition-colors md:absolute md:left-1/2 md:-translate-x-1/2"
+          >
+            Lavet af Companio
+          </a>
           <ul className="flex gap-6 sm:gap-8">
             <li>
               <Link
